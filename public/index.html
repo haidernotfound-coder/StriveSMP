@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>StriveSMP — Competitive Minecraft SMP</title>
+<meta name="description" content="A semi-private, whitelisted SMP for 60–70 players. Competitive SMP, forged in the flames of Strive." />
+<link rel="icon" href="assets/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="grain"></div>
+<div class="ember-field" id="emberField"></div>
+
+<nav class="sidenav" id="sidenav">
+  <a href="#home" class="side-logo">
+    <img src="assets/logo.png" alt="StriveSMP" />
+  </a>
+  <ul class="side-links">
+    <li><a href="#home" class="side-link active" data-label="Home"><span class="side-dot"></span><span class="side-text">Home</span></a></li>
+    <li><a href="#about" class="side-link" data-label="About"><span class="side-dot"></span><span class="side-text">About</span></a></li>
+    <li><a href="#features" class="side-link" data-label="Features"><span class="side-dot"></span><span class="side-text">Features</span></a></li>
+    <li><a href="#join" class="side-link" data-label="Join"><span class="side-dot"></span><span class="side-text">Join</span></a></li>
+  </ul>
+  <a href="https://discord.gg/UqP8CSAPJq" target="_blank" rel="noopener" class="side-cta">
+    <span>Get Whitelisted Now</span>
+  </a>
+</nav>
+
+<button class="nav-burger" id="navBurger" aria-label="Open menu">
+  <span></span><span></span><span></span>
+</button>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#features">Features</a>
+  <a href="https://discord.gg/UqP8CSAPJq" target="_blank" rel="noopener">Discord</a>
+  <a href="https://discord.gg/UqP8CSAPJq" target="_blank" rel="noopener" class="mobile-cta">Get Whitelisted Now</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-glow"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-badges reveal">
+      <div class="hero-badge">
+        <span class="pulse-dot"></span> Whitelist Applications Open
+      </div>
+      <div class="hero-badge season-badge">
+        <span class="season-flame">🔥</span> Season 2
+      </div>
+    </div>
+    <img src="assets/logo.png" alt="StriveSMP Logo" class="hero-logo reveal" />
+    <h1 class="hero-tagline reveal">
+      Competitive SMP, forged in the flames of <span class="accent">Strive</span>.
+    </h1>
+    <p class="hero-sub reveal">
+      A semi-private, whitelisted SMP for 60–70 players. Powerful plugin abilities and ranked —
+      exactly one mace on the whole server.
+    </p>
+    <div class="hero-actions reveal">
+      <a href="https://discord.gg/UqP8CSAPJq" target="_blank" rel="noopener" class="btn btn-primary">
+        <span>Get Whitelisted Now</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="#about" class="btn btn-ghost">Learn More</a>
+    </div>
+    <div class="hero-stats reveal">
+      <div class="stat">
+        <span class="stat-num stat-range">60–70</span>
+        <span class="stat-label">Players</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num" data-count="1">0</span>
+        <span class="stat-label">Mace Server-Wide</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num" data-count="24">0</span>
+        <span class="stat-label">/7 Uptime</span>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue">
+    <span>Scroll</span>
+    <div class="scroll-line"><div class="scroll-dot"></div></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="section-head">
+    <span class="eyebrow reveal">The Arena</span>
+    <h2 class="reveal">Not your average survival server.</h2>
+    <p class="reveal">StriveSMP is built around scarcity, strategy and rivalry. Every player is handpicked,
+      every advantage is earned, and every season ends in fire.</p>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-card wide reveal">
+      <div class="about-card-icon">🔐</div>
+      <h3>Semi-Private & Whitelisted</h3>
+      <p>Capped at 60–70 players through a curated application process. No randoms, no griefers —
+        just a tight-knit roster of competitive survivalists who show up to play.</p>
+    </div>
+    <div class="about-card reveal">
+      <div class="about-card-icon">⚔️</div>
+      <h3>Ranked Seasons</h3>
+      <p>Climb the leaderboard, build alliances, break them, and fight for server-wide dominance
+        each season.</p>
+    </div>
+    <div class="about-card reveal">
+      <div class="about-card-icon">🔨</div>
+      <h3>One Mace. Period.</h3>
+      <p>Exactly one mace exists on the entire server at any time. Whoever holds it, holds power —
+        and a target on their back.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features" id="features">
+  <div class="section-head">
+    <span class="eyebrow reveal">Why Strive</span>
+    <h2 class="reveal">Built different, on purpose.</h2>
+  </div>
+
+  <div class="features-grid">
+    <div class="feature-card reveal">
+      <div class="feature-glow"></div>
+      <div class="feature-icon">🧩</div>
+      <h3>Custom Plugin Abilities</h3>
+      <p>Unlock unique, balanced plugin-powered abilities as you progress — built in-house for
+        fair, competitive gameplay.</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-glow"></div>
+      <div class="feature-icon">🏆</div>
+      <h3>Seasonal Rankings</h3>
+      <p>Every season resets the board. Prove yourself again, climb again, and earn your place in
+        Strive history.</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-glow"></div>
+      <div class="feature-icon">🛡️</div>
+      <h3>Active Moderation</h3>
+      <p>A dedicated staff team keeps the server fair, fast, and free of exploits so the only
+        thing that beats you is skill.</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-glow"></div>
+      <div class="feature-icon">🎆</div>
+      <h3>Dynamic Events</h3>
+      <p>Server-wide events, raids, and challenges keep every season unpredictable and alive.</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-glow"></div>
+      <div class="feature-icon">👥</div>
+      <h3>Tight Community</h3>
+      <p>A private Discord for whitelisted members only — real conversations, real rivalries, real
+        friendships.</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-glow"></div>
+      <div class="feature-icon">⚡</div>
+      <h3>High Performance</h3>
+      <p>Low-latency, high-TPS hosting built to handle intense PvP and large-scale builds without
+        lag.</p>
+    </div>
+  </div>
+</section>
+
+<!-- JOIN / CTA -->
+<section class="join" id="join">
+  <div class="join-glow"></div>
+  <div class="join-content reveal">
+    <img src="assets/logo.png" alt="StriveSMP" class="join-logo" />
+    <h2>Ready to Strive?</h2>
+    <p>Applications are reviewed on a rolling basis. Slots are limited — secure yours before the
+      whitelist closes.</p>
+    <div class="join-actions">
+      <a href="https://discord.gg/UqP8CSAPJq" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+        <span>Get Whitelisted Now</span>
+      </a>
+      <a href="https://discord.gg/UqP8CSAPJq" target="_blank" rel="noopener" class="btn btn-ghost btn-lg">Join Discord</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <img src="assets/logo.png" alt="StriveSMP" class="footer-logo" />
+    <p>© 2026 StriveSMP. Competitive SMP, forged in the flames of Strive.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
