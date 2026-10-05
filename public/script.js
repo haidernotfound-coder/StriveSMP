@@ -1,3 +1,18 @@
+// ===== Splash / Preloader =====
+const splash = document.getElementById("splash");
+if (splash) {
+  document.body.classList.add("no-scroll");
+  const dismissSplash = () => {
+    splash.classList.add("hide");
+    document.body.classList.remove("no-scroll");
+  };
+  window.addEventListener("load", () => {
+    setTimeout(dismissSplash, 1100);
+  });
+  // Safety net in case load event is delayed
+  setTimeout(dismissSplash, 2600);
+}
+
 // ===== Sidenav active-link tracking =====
 const sideLinks = document.querySelectorAll(".side-link");
 const sections = Array.from(sideLinks)
